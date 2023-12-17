@@ -1,7 +1,5 @@
 #include "sort.h"
 
-void swapNodes(listint_t **Fnode, listint_t **Snode);
-
 /**
  * insertion_sort_list - Sorts a doubly linked list of integers in
  * ascending order using the insertion sort algorithm.
