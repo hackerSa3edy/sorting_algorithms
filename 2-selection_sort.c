@@ -12,7 +12,7 @@ void selection_sort(int *array, size_t size)
 	size_t upperFor, innerFor, lowerInt_index;
 	int lowerInt;
 
-	if (size < 2 || array == NULL)
+	if (size < 2)
 		return;
 
 	for (upperFor = 0; upperFor < size - 2; upperFor++)
@@ -27,7 +27,7 @@ void selection_sort(int *array, size_t size)
 				lowerInt_index = innerFor;
 			}
 		}
-		if (array[upperFor] != lowerInt)
+		if (upperFor != lowerInt_index)
 		{
 			array[lowerInt_index] = array[upperFor];
 			array[upperFor] = lowerInt;
